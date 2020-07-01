@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_travel/button_purple.dart';
+import 'package:flutter_app_travel/widgets/button_purple.dart';
 
 class Description extends StatelessWidget {
   @override

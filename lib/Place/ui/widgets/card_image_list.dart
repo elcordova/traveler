@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_app_travel/card_image.dart';
+import 'package:flutter_app_travel/Place/ui/widgets/card_image.dart';
 
 class CardImageList extends StatelessWidget {
   @override
