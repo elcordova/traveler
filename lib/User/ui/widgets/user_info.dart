@@ -31,32 +31,34 @@ class UserInfo extends StatelessWidget {
       ),
     );
 
-    final userInfo = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-            margin: EdgeInsets.only(
-                bottom: 5.0
-            ),
-            child: Text(
-                user.name,
-                style: TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  fontFamily: 'Lato',
+    final userInfo = Flexible(
+        child:Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Container(
+                margin: EdgeInsets.only(
+                    bottom: 5.0
+                ),
+                child: Text(
+                    user.name,
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      fontFamily: 'Lato',
+                    )
                 )
-            )
-        ),
-        Text(
-            user.email,
-            style: TextStyle(
-                fontSize: 15.0,
-                color: Colors.white30,
-                fontFamily: 'Lato'
-            )
-        ),
-      ],
+            ),
+            Text(
+                user.email,
+                style: TextStyle(
+                    fontSize: 15.0,
+                    color: Colors.white30,
+                    fontFamily: 'Lato'
+                )
+            ),
+        ],
+      )
     );
 
     return Container(

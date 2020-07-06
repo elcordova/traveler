@@ -6,7 +6,7 @@ import '../widgets/user_info.dart';
 import '../widgets/button_bar.dart';
 
 class ProfileHeader extends StatelessWidget {
-  BlocUser userBloc;
+  UserBloc userBloc;
   User user;
 
   @override

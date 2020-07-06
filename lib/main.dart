@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           home: SignInScreen()
       ),
-      bloc: BlocUser(),
+      bloc: UserBloc(),
     );
   }
 }

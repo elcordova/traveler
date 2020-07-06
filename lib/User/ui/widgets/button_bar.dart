@@ -7,7 +7,7 @@ import 'package:flutter_app_travel/User/ui/widgets/circle_button.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
 class ButtonsBar extends StatelessWidget {
-  BlocUser userBloc;
+  UserBloc userBloc;
   @override
   Widget build(BuildContext context) {
     userBloc = BlocProvider.of(context);
@@ -25,8 +25,9 @@ class ButtonsBar extends StatelessWidget {
             //ANADE NUEVO LUGAR
             CircleButton(false, Icons.add, 40.0, Color.fromRGBO(255, 255, 255, 1),(){
               File image;
-              Navigator.push(context,
-                MaterialPageRoute(
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
                     builder: (BuildContext context) => AddPlaceScreen(image: image))
               );
             }),

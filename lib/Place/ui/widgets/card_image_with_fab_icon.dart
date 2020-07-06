@@ -1,19 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app_travel/widgets/floating_action_button_green.dart';
 
-class CardImage extends StatelessWidget {
-  String pathImage = "assets/images/paisaje1";
+class CardImageWithFabIcon extends StatelessWidget {
+  final double height;
+  final double width;
+  final double left;
+  final String pathImage;
+  final VoidCallback onPressFabIcon;
+  final IconData iconData;
 
-  CardImage(this.pathImage);
+  CardImageWithFabIcon({
+    this.height: 250.0,
+    this.width: 350.0,
+    this.left: 20.0,
+    this.pathImage,
+    this.iconData,
+    this.onPressFabIcon
+  });
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     final card = Container(
-      height: 350.0,
-      width: 250,
+      height: height,
+      width: width,
       margin: EdgeInsets.only(
-        top: 80.0,
-        left: 20.0
+        left: left
       ),
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -35,7 +46,7 @@ class CardImage extends StatelessWidget {
       alignment: Alignment(0.9,1.1),
       children: <Widget>[
         card,
-        FloatingActionButtonGreen()
+        FloatingActionButtonGreen(iconData: iconData, onPressed: onPressFabIcon,)
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_app_travel/Place/ui/widgets/card_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_app_travel/Place/ui/widgets/card_image_with_fab_icon.dart';
 
 class CardImageList extends StatelessWidget {
   @override
@@ -11,12 +12,12 @@ class CardImageList extends StatelessWidget {
         padding: EdgeInsets.all(35),
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          CardImage("assets/images/paisaje1.jpg"),
-          CardImage("assets/images/paisaje2.jpg"),
-          CardImage("assets/images/paisaje3.jpg"),
-          CardImage("assets/images/paisaje4.jpg"),
-          CardImage("assets/images/paisaje5.jpg"),
-          CardImage("assets/images/paisaje6.jpg"),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje1.jpg", iconData: Icons.favorite_border),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje2.jpg", iconData: Icons.favorite_border),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje3.jpg", iconData: Icons.favorite_border),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje4.jpg", iconData: Icons.favorite_border),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje5.jpg", iconData: Icons.favorite_border),
+          CardImageWithFabIcon(pathImage: "assets/images/paisaje6.jpg", iconData: Icons.favorite_border),
         ],
       ),
     );

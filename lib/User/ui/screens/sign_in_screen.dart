@@ -16,7 +16,7 @@ class SignInScreen extends StatefulWidget {
 
 class _SignInScreen extends State<SignInScreen> {
 
-  BlocUser userBloc;
+  UserBloc userBloc;
   double screenWidth;
 
   @override

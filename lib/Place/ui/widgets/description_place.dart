@@ -109,7 +109,10 @@ class Description extends StatelessWidget {
       children: <Widget>[
         title_start,
         only_text,
-        ButtonPurple("Navigate")
+        ButtonPurple(
+          buttonText: "Navigate",
+          onPressed: (){},
+        )
       ],
     );
 
