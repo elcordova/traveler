@@ -89,6 +89,8 @@ PODS:
     - FirebaseCore (~> 5.2)
     - GTMSessionFetcher/Core (~> 1.1)
   - Flutter (1.0.0)
+  - flutter_plugin_android_lifecycle (0.0.1):
+    - Flutter
   - google_sign_in (0.0.1):
     - Flutter
     - GoogleSignIn (~> 5.0)
@@ -146,6 +148,8 @@ PODS:
   - GTMSessionFetcher/Core (1.4.0)
   - GTMSessionFetcher/Full (1.4.0):
     - GTMSessionFetcher/Core (= 1.4.0)
+  - image_picker (0.0.1):
+    - Flutter
   - leveldb-library (1.22)
   - nanopb (0.3.9011):
     - nanopb/decode (= 0.3.9011)
@@ -160,8 +164,10 @@ DEPENDENCIES:
   - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
   - firebase_storage (from `.symlinks/plugins/firebase_storage/ios`)
   - Flutter (from `Flutter`)
+  - flutter_plugin_android_lifecycle (from `.symlinks/plugins/flutter_plugin_android_lifecycle/ios`)
   - google_sign_in (from `.symlinks/plugins/google_sign_in/ios`)
   - google_sign_in_web (from `.symlinks/plugins/google_sign_in_web/ios`)
+  - image_picker (from `.symlinks/plugins/image_picker/ios`)
 
 SPEC REPOS:
   trunk:
@@ -198,10 +204,14 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_storage/ios"
   Flutter:
     :path: Flutter
+  flutter_plugin_android_lifecycle:
+    :path: ".symlinks/plugins/flutter_plugin_android_lifecycle/ios"
   google_sign_in:
     :path: ".symlinks/plugins/google_sign_in/ios"
   google_sign_in_web:
     :path: ".symlinks/plugins/google_sign_in_web/ios"
+  image_picker:
+    :path: ".symlinks/plugins/image_picker/ios"
 
 SPEC CHECKSUMS:
   AppAuth: 31bcec809a638d7bd2f86ea8a52bd45f6e81e7c7
@@ -220,6 +230,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
   FirebaseStorage: 6162ef4322502b818d9de0ec552f5226d283de43
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_plugin_android_lifecycle: dc0b544e129eebb77a6bfb1239d4d1c673a60a35
   google_sign_in: 6bd214b9c154f881422f5fe27b66aaa7bbd580cc
   google_sign_in_web: 52deb24929ac0992baff65c57956031c44ed44c3
   GoogleAppMeasurement: ffe513e90551844a739e7bcbb1d2aca1c28a4338
@@ -229,6 +240,7 @@ SPEC CHECKSUMS:
   gRPC-Core: 4028031ed2c5267cca0d846c876d8046b1ecb9b6
   GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
   GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+  image_picker: 9c3312491f862b28d21ecd8fdf0ee14e601b3f09
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: 2793fcd0622a00b546c60e7cbbcc493e043e9bb9

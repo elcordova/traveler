@@ -1,20 +1,21 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_app_travel/User/model/user.dart';
 
 class Place {
   String id;
   String name;
   String description;
-  String uriImage;
+  String urlImage;
   int likes;
-  User userOwner;
+  bool liked;
+  // User userOwner;
 
-  Place({
-    @required this.name,
-    @required this.description,
-    @required this.uriImage,
-    @required this.userOwner,
-    this.likes,
-
-  });
+  Place(
+      {Key key,
+      @required this.name,
+      @required this.description,
+      @required this.urlImage,
+      // @required this.userOwner,
+      this.likes,
+      this.liked,
+      this.id});
 }
